@@ -10,7 +10,7 @@ def scrapper(page_num):
     return soup
 
 def extract(soup):
-    jobs = soup.find_all('div', class_='base-card relative w-full hover:no-underline focus:no-underline base-card--link base-search-card base-search-card--link job-search-card')
+    jobs = soup.find_all('div', class_='base-card relative w-full hover:no-underline focus:no-underline base-card--link base-search-card base-search-card--link ')
     for item in jobs:
         title = item.find('a').text.strip()
         company = item.find('h4').text.strip()
