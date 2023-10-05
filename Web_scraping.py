@@ -28,7 +28,7 @@ def extract(soup):
                 'Localizacion': location,
                 'Fecha_publicacion_trabajo': time
             }
-
+            joblist.append(job)
 joblist = []
 
 page = int(input(f'Enter the number of pages you want to scrape: '))
